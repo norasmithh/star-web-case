@@ -13,7 +13,6 @@ Modern, responsive ve kullanıcı dostu bir haber portalı web uygulaması. Vue.
 - [API Entegrasyonları](#api-entegrasyonları)
 - [Responsive Tasarım](#responsive-tasarım)
 - [Dark Mode](#dark-mode)
-- [Deployment](#deployment)
 
 ## ✨ Özellikler
 
@@ -260,21 +259,3 @@ https://www.tcmb.gov.tr/kurlar/today.xml
 ### Assets
 - `src/assets/starlogo2025.png` - Ana logo
 - `public/favicon.svg` - Favicon (kırmızı 'S')
-
-## 🚢 Deployment
-
-### Production Build
-```bash
-npm run build
-```
-
-Build çıktısı `dist/` klasöründe oluşturulur.
-
-### Deployment Seçenekleri
-- **Vercel**: Otomatik deployment (önerilir)
-- **Netlify**: Drag & drop veya Git entegrasyonu
-- **GitHub Pages**: Static hosting
-- **Heroku**: Container-based deployment
-
-### Environment Variables
-Şu anda environment variable kullanılmamaktadır. API'ler public endpoint'lerdir.
