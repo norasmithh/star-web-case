@@ -17,7 +17,7 @@
       <swiper-slide
         v-for="(slide, index) in slides"
         :key="index"
-        @click="setMainSlide(slide, index)"
+        @mouseenter="setMainSlide(slide, index)"
         :class="{ activeThumb: activeIndex === index }"
       >
         <div class="thumb-card">
@@ -86,13 +86,16 @@ export default {
 <style scoped>
 .headline-slider {
   width: 100%;
+  max-width: 1280px;
+  margin: 24px auto 0;
+  padding: 0 40px;
   position: relative;
 }
 
 /* --- BÜYÜK MANŞET --- */
 .headline-image {
   width: 100%;
-  height: 450px;
+  height: 520px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -122,7 +125,7 @@ export default {
 .thumb-swiper {
   width: 100%;
   background: #000;
-  padding: 10px 0;
+  padding: 0;
 }
 
 /* Swiper içindeki elemanlar için scoped nedeniyle :deep kullanıyoruz */
